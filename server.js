@@ -23,7 +23,6 @@ app.get('/:date', function(req,res){
   var isValidDate = (new Date(date)).getTime() > 0
   
   if(isValidDate){
-      
       if(natDate){
         res.json({
           "natural": date,
@@ -48,7 +47,6 @@ app.get('/:date', function(req,res){
       }
   }
 
-  
 })
 
 console.log("Server Started on port: " + process.env.PORT);
